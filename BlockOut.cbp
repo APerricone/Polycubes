@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_project_file>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="1"/>
+	<Project>
+		<Option title="Polycubes"/>
+		<Option makefile="Makefile"/>
+		<Option makefile_is_custom="0"/>
+		<Option active_target="1"/>
+		<Option compiler="0"/>
+		<Build>
+			<Target title="default">
+				<Option output="exeDir\Polycubes.exe"/>
+				<Option working_dir="exeDir"/>
+				<Option object_output=".objs"/>
+				<Option deps_output=".deps"/>
+				<Option type="0"/>
+				<Option compiler="0"/>
+				<Option projectIncludeDirsRelation="2"/>
+				<Option projectResourceIncludeDirsRelation="0"/>
+				<Compiler>
+					<Add option="-march=pentium-mmx"/>
+					<Add option="-fexpensive-optimizations"/>
+					<Add option="-O3"/>
+					<Add option="-w"/>
+					<Add option="-D_WINDOWS"/>
+					<Add directory="include"/>
+				</Compiler>
+				<Linker>
+					<Add library="C:\Programmi\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib"/>
+					<Add library="libs\zlibwapi.lib"/>
+					<Add library="libs\libpng.lib"/>
+					<Add library="libs\zlib.lib"/>
+					<Add directory="libs"/>
+				</Linker>
+			</Target>
+			<Target title="Debug">
+				<Option output="exeDir\PolycubesDBG.exe"/>
+				<Option working_dir="exeDir"/>
+				<Option object_output=".objsDBG"/>
+				<Option deps_output=".depsDBG"/>
+				<Option type="0"/>
+				<Option compiler="0"/>
+				<Option projectResourceIncludeDirsRelation="0"/>
+				<Compiler>
+					<Add option="-pg"/>
+					<Add option="-g"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-D_DEBUG"/>
+					<Add option="-DWINDOWS"/>
+					<Add option="-D_WINDOWS"/>
+					<Add directory="include"/>
+				</Compiler>
+				<Linker>
+					<Add option="-pg -lgmon"/>
+					<Add library="C:\Programmi\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib"/>
+					<Add library="libs\zlibwapi.lib"/>
+					<Add library="libs\libpng.lib"/>
+					<Add library="libs\zlib.lib"/>
+					<Add directory="libs"/>
+				</Linker>
+			</Target>
+		</Build>
+		<Linker>
+			<Add library="opengl32"/>
+			<Add library="glu32"/>
+			<Add library="gdi32"/>
+			<Add library="user32"/>
+			<Add library="kernel32"/>
+		</Linker>
+		<Unit filename="Arrow.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="BOCube.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="Button.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="Collision.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="ComboBox.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="EditBox.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="EditMenu.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="GameSet.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="GameSet.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="Image.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="MenuElements.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="Menus.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="Options.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="Pieces.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="Pieces.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="RadiosityMan.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="Records.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="Rectangle.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="ScrollBar.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="Slider.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="SliderLine.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="Wave.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="circles.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="dialog.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="dynamicMesh.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="dynamicMesh.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="font.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="font.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="gallery.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="game.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="game.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="help.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="hole.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="hole.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="icon.rc">
+			<Option compilerVar="WINDRES"/>
+			<Option objectName="icon.res"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="image.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="inGame.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="locKit.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="locKit.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="mainMenu.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="match.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="match.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="png.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="pngconf.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="primitives.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="radiosityMan.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="systemInterface.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="wave.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="winMain.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="zconf.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+		<Unit filename="zlib.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+			<Option target="Debug"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
