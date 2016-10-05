@@ -56,7 +56,7 @@ This is code is property if Antonino Perricone, all modification must be approve
 I try to made a clean and clear code but it has a few of comments.
 
 # Wish-list
-For fist I dream a Haiku, a Linux and a Mac version of this game, I think i can doing the Haiku version.
+For first I dream a Haiku, a Linux and a Mac version of this game, I think i can doing the Haiku version.
 The thread code is rooted on ReadiostyMan.cpp and this file shoud be a platform-independent.
 In first version i thought the piece in game will be made with class, distort the hole below it and make a caustic and a shadow in walls and installed pieces.
 This code for an empy hole 6x6x12 in quality 0 use plus of 500.000 ray testing, I read the book "realistic Image systhesis using photon mapping" by Henrik Wann Jensen freshly. And i think i can make a better indirect illumination with 100.000 photon tracking, use other 100.000 for make the next piece with caustic make the game more smooth.
