@@ -1,7 +1,9 @@
 # Polycubes 
 ## by Antonino Perricone
 A OpenGL/OpenAL Blockout clone
+
 Old repository with screenshot: https://sourceforge.net/projects/polycubes/
+
 To see correctly this file and other file of code set tab intent to 4.
 
 # Credits
